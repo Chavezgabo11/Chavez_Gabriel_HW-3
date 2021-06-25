@@ -1,0 +1,141 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.hidden{
+  display: none;
+}
+#quote {
+  position:absolute;
+  border-radius: 15px;
+  padding: 20px;
+  left:400px;
+  top:150px;
+  width:750px;
+  height:575px;
+  background-color: rgb(164, 188, 252);
+}
+
+#quote h1{
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+#quote p{
+  padding-bottom: 10px;
+  padding-right: 250PX;
+}
+
+#imgcontainer {
+  position:absolute;
+  left:200px;
+  top:140px;
+  width:175px;
+  height:175px;
+}
+
+#imgcontainer img{
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 175px;
+  height: 175px;
+}
+
+#links {
+  position:absolute;
+  text-align: center;
+  background-color: #999;
+  border-radius: 10px;
+  left:220px;
+  top:630px;
+  padding-top: 15px;
+  width:100px;
+  height:30px;
+}
+
+#links a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#plane-animation {
+  position: absolute;
+  top: 250px;
+  left: 950px;
+  animation: movement 5s ease-in-out 1 alternate;
+}
+
+#plane-animation img {
+  width: 200px;
+  height: 200px;
+}
+
+#plane-animation:hover {
+
+  animation: rotation 5s ease-in-out infinite alternate;
+}
+
+#title-animation {
+  position: absolute;
+  top: -20px;
+  left: 550px;
+  animation: dash 5s linear forwards;
+}
+
+#title-animation img{
+  width: 400px;
+  height: 200px;
+}
+
+#plane-wheel-animation {
+  position: absolute;
+  top: 500px;
+  left: 980px;
+  animation: rotation 5s ease-in-out 1 alternate;
+}
+
+#plane-wheel-animation:hover {
+  animation: rotation 10s ease-in-out infinite alternate;
+}
+
+#plane-wheel-animation img {
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes rotation {
+  from{
+        transform: rotateZ(0deg);
+  }
+
+  to{
+        transform: rotateZ(15deg);
+  }
+}
+
+@keyframes smoke {
+  from{
+        transform: rotateZ(0deg);
+  }
+
+  to{
+        transform: rotateZ(-15deg);
+  }
+}
+
+@keyframes movement {
+  from{
+        transform: translateX(50px);
+  }
+
+  to{
+        transform: translateX(0px);
+  }
+}
+
+.rotate {
+  animation: rotation 2s ease-out 1 alternate;
+}
